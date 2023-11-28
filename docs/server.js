@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 app.get('/ITC505/lab7', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
